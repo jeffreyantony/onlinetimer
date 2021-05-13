@@ -9,7 +9,7 @@ let volume = document.querySelector("#volume-control");
 volume.addEventListener("change", function(e) {
     audio.volume = e.currentTarget.value / 100;
     //console.log(e.currentTarget.value+"%");
-    //document.getElementById("volume-control").innerHTML= e.currentTarget.value+"%";
+    document.getElementById("vol-percentage").innerHTML= e.currentTarget.value+"%";
 })
 
 function button_handler() {
