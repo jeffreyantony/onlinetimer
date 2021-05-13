@@ -33,6 +33,10 @@ function run_timer() {
     document.getElementById("time").innerHTML = time;
     
     if(!(time%60)) {
-        audio.play(); // now we're safe to play it        
+        audio.play();
     }
+}
+
+function play_audio() {
+    audio.play();
 }
