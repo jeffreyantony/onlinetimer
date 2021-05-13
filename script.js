@@ -39,7 +39,7 @@ function run_timer() {
     var time = Math.floor(delta / 1000); // in seconds
     document.getElementById("time").innerHTML = time;
     
-    if(!(time%10)) {
+    if(!(time%60)) {
         audio.play();
     }
 }
