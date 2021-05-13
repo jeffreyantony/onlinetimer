@@ -5,6 +5,11 @@ var timer;
 
 const audio = new Audio("hopbell.mp3");
 
+let volume = document.querySelector("#volume-control");
+volume.addEventListener("change", function(e) {
+    audio.volume = e.currentTarget.value / 100;
+})
+
 function button_handler() {
     var txt = document.getElementById("btn").textContent;
     if(txt == "Start Timer") {
