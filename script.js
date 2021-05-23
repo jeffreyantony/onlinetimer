@@ -40,6 +40,7 @@ function startWorker() {
 function stopWorker() {
   w.terminate();
   w = undefined;
+  document.getElementById("time").innerHTML = 0;
 }
 
 let volume = document.querySelector("#volume-control");
