@@ -1,8 +1,6 @@
 
 btn.onclick = button_handler;
 
-const audio = new Audio("hopbell.mp3");
-
 var w;
 
 function startTimerWorker() {
@@ -68,5 +66,6 @@ function button_handler() {
 }*/
 
 function play_audio() {
+    const audio = new Audio("hopbell.mp3");
     audio.play();
 }
