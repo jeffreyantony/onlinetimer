@@ -45,11 +45,5 @@ function run_timer() {
 }
 
 function play_audio() {
-    // Event LISTENER: Rewind the playhead when play has ended
-    audio.addEventListener('ended',function(){
-        this.pause();
-        this.currentTime=0;
-    });
-    
     audio.play();
 }
