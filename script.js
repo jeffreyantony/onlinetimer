@@ -40,10 +40,16 @@ function run_timer() {
     document.getElementById("time").innerHTML = time;
     
     if(!(time%60)) {
-        audio.play();
+        play_audio();
     }
 }
 
 function play_audio() {
+    // Event LISTENER: Rewind the playhead when play has ended
+    audio.addEventListener('ended',function(){
+        this.pause();
+        this.currentTime=0;
+    });
+    
     audio.play();
 }
